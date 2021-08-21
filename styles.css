@@ -14,12 +14,99 @@ body {
     background-repeat: no-repeat;
 }
 
+
+
 .full-height-grow {
     display: flex;
     flex-direction: column;
 }
 
-.banner {
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}   
+
+    
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    margin: 5px;
+    background-color: rgb(226, 226, 226);
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width:60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    fron {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* .banner {
     display: flex;
     flex-direction: column;
     min-height: 600px;
@@ -54,7 +141,7 @@ body {
 
 .nav__menu a:hover {
     color: rgb(57, 66, 83);
-}
+} */
 
 .main__section {
     display: flex;
@@ -176,17 +263,18 @@ body {
 }
 
 footer {
-    flex: 1;
-    margin-top: 175px;
-    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: space-around;
     align-items: center;
+    min-height: 8vh;
 }
 
 .footer ul{

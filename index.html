@@ -6,44 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Oliver Copy</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body >
     <div class="wrapper full-height-grow">
-        <div class="banner">
-            <div class="header">
+        <nav>
+            <div class="logo">
                 <a href="/" class="brand__logo">
                     <img class="logo" src="assets/Logo.png">
                 </a>
-                <nav class="nav__menu">
-                    <ul>
-                        <li>
-                            <a href="/about">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/integrations">
-                                Integrations
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/pricing">
-                                Pricing
-                            </a>
-                        </li>   
-                        <li>
-                            <a href="/contacts">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="menu__icon">
-
-                </div>
             </div>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>                 
+        </nav>
+                 
 
             <div class="main__section">
                 <div class="left__container">
@@ -78,12 +64,11 @@
                         </form>
                     </div>
                     <div class="terms__info">
-                        <span class="terms__text">By clicking "Sign up" I agree to our <br><a class="terms__link" href="/terms_of_service">Terms of Service</a> </span>
-                        
+                        <span class="terms__text">By clicking "Sign up" I agree to our <br><a class="terms__link" href="/terms_of_service">Terms of Service</a> </span>  
                     </div>
                 </div>
-
             </div> 
+
         </div>
         
        
@@ -92,7 +77,7 @@
                 <p>©2021 Stamp. All Rights Reserved</p>
             </div>
             <nav class="footer__nav">
-                <ul>
+                <ul class="nav-links-ft">
                     <li>
                         <a href="/contact">CONTACT</a>
                     </li>
@@ -111,5 +96,7 @@
         
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
