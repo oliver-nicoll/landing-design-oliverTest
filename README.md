@@ -15,4 +15,8 @@ In order to run this application, execute:
 or type in:
 
 	$ open index.html
+	
+## Change Made
+
+Made the hamburger only appear to display nav-links to respond to screen size - when shrunk down.  
 
