@@ -14,5 +14,5 @@ In order to run this application, execute:
 
 or type in:
 
-   $ open index.html
+	$ open index.html
 
