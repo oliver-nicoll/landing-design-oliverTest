@@ -152,7 +152,7 @@ nav {
 
 .text__form__head {
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .form__box {
@@ -165,8 +165,8 @@ nav {
 .input__group {
     display: flex;
     flex-direction: column;
-    
 }
+
 .input__group input {
     outline: none;
     background: rgba(0,0,0,0.2);
