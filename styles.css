@@ -47,6 +47,11 @@ nav {
     padding: 1rem;
 }
 
+.nav-links a:hover {
+    color: rgb(57, 66, 83);
+
+}
+
 .burger {
     display: none;
     cursor: pointer;
